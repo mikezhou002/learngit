@@ -19,7 +19,6 @@ git 管理的是修改
 
 查看图形历史记录：git log --graph
 
-
 修改提交到暂存区： git add filename
 
 将所有修改提交到暂存区： git add .
@@ -30,9 +29,15 @@ git 管理的是修改
 
 丢弃暂存区：git reset HEAD -- filename
 
+签出指定提交中的文件：git checkout abcdef -- filename
+
+签出其他分支中的文件：git checkout master -- filename
+
 删除文件：在文件管理器中删除文件 -> git rm filename -> git commit
 
 回退版本：git reset --hard abcde
+
+回退指定文件：git reset fcd2003 filename
 
 查看所有命令记录：git reflog
 
